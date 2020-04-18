@@ -8,7 +8,7 @@ We use the [COVID-18-TweetIDs](https://github.com/echen102/COVID-19-TweetIDs) da
 
 The `scripts` directory contains pre-processing scripts that we use to process and clean the data.
 
-We hydrate the COVID-18-TweetIDs dataset and filter for english tweets (`lang:en`). We the extract the following fields from the raw [Twitter API response](https://developer.twitter.com/en/docs/tweets/data-dictionary/overview/tweet-object):
+We hydrate the COVID-19-TweetIDs dataset and filter for english tweets (`lang:en`). We then extract the following fields from the raw [Twitter API response](https://developer.twitter.com/en/docs/tweets/data-dictionary/overview/tweet-object):
 - `id_str`
 - `lang`
 - `full_text`
@@ -30,9 +30,9 @@ We use the `emoji` python library to extract emojis from each tweet and store th
 
 ### Dependencies:
 
-- vaderSentiment (for sentiment detection)
-- tqdm (progress bar)
-- emoji (to extract emojis from tweets)
+- `vaderSentiment` (for sentiment detection)
+- `tqdm` (progress bar)
+- `emoji` (to extract emojis from tweets)
 
 ```
 pip install tqdm, vaderSentiment, emoji --upgrade
