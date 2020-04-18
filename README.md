@@ -2,7 +2,7 @@
 Code for Info 247 final project: Mitigating The COVID-19 Infodemic with Twitter analysis
 
 ## Data
-We use the [COVID-18-TweetIDs](https://github.com/echen102/COVID-19-TweetIDs) dataset.
+We use the [COVID-19-TweetIDs](https://github.com/echen102/COVID-19-TweetIDs) dataset.
 
 ## Preprocessing
 
