@@ -32,12 +32,12 @@ We use the [Vader](http://comp.social.gatech.edu/papers/icwsm14.vader.hutto.pdf)
 - tqdm (progress bar)
 - emoji (to extract emojis from tweets)
 
-Insallation:
+### Insallation:
 ```
 pip install tqdm, vaderSentiment, emoji --upgrade
 ```
 
-**Usage**
+### Usage
 To preprocess hydrated `.jsonl.gz` files, call `process_raw_tweets.py` with an input directory that contains the `.jsonl.gz` files. Also specify start (inclusive) and end (exclusive) dates to process.
 ```
 python3 scripts/process_raw_tweets.py --dir 2020-03/ --start 2020-03-01 --end 2020-03-08
