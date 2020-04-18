@@ -70,8 +70,16 @@ class Tweet:
         self.place_bbox = None
         self.place_name = None
         if 'place' in data and data['place'] is not None:
-            self.place_bbox = data['place']['bounding_box']['coordinates'][0]
-            self.place_name = data['place']['full_name'].replace(',', ';')
+            try:
+                self.place_bbox = data['place']['bounding_box']['coordinates'][0]
+            except:
+                pass
+
+            try:
+                self.place_name = data['place']['full_name'].replace(',', ';')
+            except:
+                pass
+
         
         # RETWEETS, LIKES
         self.retweet_count = data['retweet_count']
@@ -100,7 +108,7 @@ class Tweet:
             str(self.dt.year), str(self.dt.month), str(self.dt.day), str(self.dt.weekday()),
             str(self.dt.hour), str(self.dt.minute), str(self.dt.utcoffset()),
             self.text, ' '.join(self.hashtags), ' '.join(self.user_mentions),
-            ' '.join(self.symbols), ' '.join(self.urls), self.emojis, '{}',format(self.sentiment),
+            ' '.join(self.symbols), ' '.join(self.urls), self.emojis, str(self.sentiment) if not self.sentiment is None else '',
             str(self.retweet_count), str(self.favorite_count),
             str(self.lat or ''), str(self.long or ''), str(self.user_location or ''),
             (self.place_name or ''), bbox_string(self.place_bbox)
@@ -139,8 +147,15 @@ class Retweet:
         self.place_bbox = None
         self.place_name = None
         if 'place' in data and data['place'] is not None:
-            self.place_bbox = data['place']['bounding_box']['coordinates'][0]
-            self.place_name = data['place']['full_name'].replace(',', ';')
+            try:
+                self.place_bbox = data['place']['bounding_box']['coordinates'][0]
+            except:
+                pass
+
+            try:
+                self.place_name = data['place']['full_name'].replace(',', ';')
+            except:
+                pass
             
         # RETWEET ID
         self.retweeted_id = data['retweeted_status']['id_str']        
@@ -188,8 +203,15 @@ class QuoteTweet:
         self.place_bbox = None
         self.place_name = None
         if 'place' in data and data['place'] is not None:
-            self.place_bbox = data['place']['bounding_box']['coordinates'][0]
-            self.place_name = data['place']['full_name'].replace(',', ';')
+            try:
+                self.place_bbox = data['place']['bounding_box']['coordinates'][0]
+            except:
+                pass
+
+            try:
+                self.place_name = data['place']['full_name'].replace(',', ';')
+            except:
+                pass
         
         self.quoted_id = data['quoted_status_id_str']
     
