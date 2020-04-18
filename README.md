@@ -26,19 +26,20 @@ We hydrate the COVID-18-TweetIDs dataset and filter for english tweets (`lang:en
 
 We use the [Vader](http://comp.social.gatech.edu/papers/icwsm14.vader.hutto.pdf) sentiment analysis tool (optimized for social media) to extract sentiment from each tweet. We store it in a `sentiment` column.
 
-**Dependencies**
+We use the `emoji` python library to extract emojis from each tweet and store them in a separate `emojis` column.
+
+### Dependencies:
 
 - vaderSentiment (for sentiment detection)
 - tqdm (progress bar)
 - emoji (to extract emojis from tweets)
 
-### Insallation:
 ```
 pip install tqdm, vaderSentiment, emoji --upgrade
 ```
 
 ### Usage
-To preprocess hydrated `.jsonl.gz` files, call `process_raw_tweets.py` with an input directory that contains the `.jsonl.gz` files. Also specify start (inclusive) and end (exclusive) dates to process.
+To preprocess hydrated `.jsonl.gz` files, call `process_raw_tweets.py` with a path to the directory that contains the `.jsonl.gz` files. Also specify start (inclusive) and end (exclusive) dates to process.
 ```
 python3 scripts/process_raw_tweets.py --dir 2020-03/ --start 2020-03-01 --end 2020-03-08
 ```
