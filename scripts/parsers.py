@@ -43,6 +43,10 @@ class Tweet:
         if bbox is None:
             return ''
         return ' '.join(["lat{}lng{}".format(x[0], x[1]) for x in bbox])
+    def from_string(self, str):
+        data = str.split(',')
+        self.id = data[0]
+
     def parse(self, data):
         # Tweet
         self.id = data['id_str']

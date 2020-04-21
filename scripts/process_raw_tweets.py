@@ -16,7 +16,7 @@ from parsers import Tweet, Retweet, QuoteTweet
 from argparse import ArgumentParser, ArgumentDefaultsHelpFormatter
 from tqdm import tqdm
 
-parser = ArgumentParser("TransE", formatter_class=ArgumentDefaultsHelpFormatter, conflict_handler='resolve') #'2020-03'
+parser = ArgumentParser("ProcessTweets", formatter_class=ArgumentDefaultsHelpFormatter, conflict_handler='resolve') #'2020-03'
 parser.add_argument("--dir", help="Data directory.", required=True)
 parser.add_argument("--start", help="start date (inclusive)", required=True) #2020-03-15
 parser.add_argument("--end", help="end date (excusive)", required=True)# 2020-03-22
