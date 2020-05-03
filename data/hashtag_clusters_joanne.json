@@ -1,0 +1,2451 @@
+{
+    "nodes": [
+        {
+            "id": "maga",
+            "group": 2,
+            "color": "#377eb8"
+        },
+        {
+            "id": "kag",
+            "group": 2,
+            "color": "#377eb8"
+        },
+        {
+            "id": "cdc",
+            "group": 7,
+            "color": "#a65628"
+        },
+        {
+            "id": "who",
+            "group": 7,
+            "color": "#a65628"
+        },
+        {
+            "id": "investing",
+            "group": 5,
+            "color": "#ff7f00"
+        },
+        {
+            "id": "stocks",
+            "group": 5,
+            "color": "#ff7f00"
+        },
+        {
+            "id": "staysafe",
+            "group": 1,
+            "color": "#e41a1c"
+        },
+        {
+            "id": "stayhome",
+            "group": 1,
+            "color": "#e41a1c"
+        },
+        {
+            "id": "trading",
+            "group": 5,
+            "color": "#ff7f00"
+        },
+        {
+            "id": "quarantine",
+            "group": 1,
+            "color": "#e41a1c"
+        },
+        {
+            "id": "quarantinelife",
+            "group": 1,
+            "color": "#e41a1c"
+        },
+        {
+            "id": "qanon",
+            "group": 2,
+            "color": "#377eb8"
+        },
+        {
+            "id": "health",
+            "group": 3,
+            "color": "#4daf4a"
+        },
+        {
+            "id": "healthcare",
+            "group": 3,
+            "color": "#4daf4a"
+        },
+        {
+            "id": "trump2020",
+            "group": 2,
+            "color": "#377eb8"
+        },
+        {
+            "id": "stockmarket",
+            "group": 5,
+            "color": "#ff7f00"
+        },
+        {
+            "id": "flattenthecurve",
+            "group": 1,
+            "color": "#e41a1c"
+        },
+        {
+            "id": "cnn",
+            "group": 2,
+            "color": "#377eb8"
+        },
+        {
+            "id": "msnbc",
+            "group": 2,
+            "color": "#377eb8"
+        },
+        {
+            "id": "foxnews",
+            "group": 2,
+            "color": "#377eb8"
+        },
+        {
+            "id": "italy",
+            "group": 6,
+            "color": "#dbaf2a"
+        },
+        {
+            "id": "iran",
+            "group": 6,
+            "color": "#dbaf2a"
+        },
+        {
+            "id": "trumpviruscoverup",
+            "group": 4,
+            "color": "#984ea3"
+        },
+        {
+            "id": "trumpvirus",
+            "group": 4,
+            "color": "#984ea3"
+        },
+        {
+            "id": "trumpliedpeopledied",
+            "group": 4,
+            "color": "#984ea3"
+        },
+        {
+            "id": "trumppandemic",
+            "group": 4,
+            "color": "#984ea3"
+        },
+        {
+            "id": "wellness",
+            "group": 3,
+            "color": "#4daf4a"
+        },
+        {
+            "id": "chinesevirus",
+            "group": 8,
+            "color": "#f781bf"
+        },
+        {
+            "id": "wuhanvirus",
+            "group": 8,
+            "color": "#f781bf"
+        },
+        {
+            "id": "wwg1wga",
+            "group": 2,
+            "color": "#377eb8"
+        },
+        {
+            "id": "kag2020",
+            "group": 2,
+            "color": "#377eb8"
+        },
+        {
+            "id": "chinavirus",
+            "group": 8,
+            "color": "#f781bf"
+        },
+        {
+            "id": "southkorea",
+            "group": 6,
+            "color": "#dbaf2a"
+        },
+        {
+            "id": "stayhealthy",
+            "group": 1,
+            "color": "#e41a1c"
+        },
+        {
+            "id": "coronvirus",
+            "group": 5,
+            "color": "#ff7f00"
+        },
+        {
+            "id": "coronaalert",
+            "group": 5,
+            "color": "#ff7f00"
+        },
+        {
+            "id": "publichealth",
+            "group": 3,
+            "color": "#4daf4a"
+        },
+        {
+            "id": "lockdown",
+            "group": 1,
+            "color": "#e41a1c"
+        },
+        {
+            "id": "travel",
+            "group": 3,
+            "color": "#4daf4a"
+        },
+        {
+            "id": "stayathome",
+            "group": 1,
+            "color": "#e41a1c"
+        },
+        {
+            "id": "pencedemic",
+            "group": 4,
+            "color": "#984ea3"
+        },
+        {
+            "id": "trumpliesaboutcoronavirus",
+            "group": 4,
+            "color": "#984ea3"
+        },
+        {
+            "id": "gop",
+            "group": 2,
+            "color": "#377eb8"
+        },
+        {
+            "id": "silver",
+            "group": 5,
+            "color": "#ff7f00"
+        },
+        {
+            "id": "gold",
+            "group": 5,
+            "color": "#ff7f00"
+        },
+        {
+            "id": "safety",
+            "group": 3,
+            "color": "#4daf4a"
+        },
+        {
+            "id": "quarantineandchill",
+            "group": 1,
+            "color": "#e41a1c"
+        },
+        {
+            "id": "nih",
+            "group": 7,
+            "color": "#a65628"
+        },
+        {
+            "id": "stayhomechallenge",
+            "group": 1,
+            "color": "#e41a1c"
+        },
+        {
+            "id": "maga2020",
+            "group": 2,
+            "color": "#377eb8"
+        },
+        {
+            "id": "washyourhands",
+            "group": 1,
+            "color": "#e41a1c"
+        },
+        {
+            "id": "quaratinelife",
+            "group": 1,
+            "color": "#e41a1c"
+        },
+        {
+            "id": "wuhancoronavirus",
+            "group": 8,
+            "color": "#f781bf"
+        },
+        {
+            "id": "bitcoin",
+            "group": 5,
+            "color": "#ff7f00"
+        },
+        {
+            "id": "btc",
+            "group": 5,
+            "color": "#ff7f00"
+        },
+        {
+            "id": "democrats",
+            "group": 2,
+            "color": "#377eb8"
+        },
+        {
+            "id": "republicans",
+            "group": 2,
+            "color": "#377eb8"
+        },
+        {
+            "id": "chinaliedpeopledied",
+            "group": 8,
+            "color": "#f781bf"
+        },
+        {
+            "id": "telehealth",
+            "group": 3,
+            "color": "#4daf4a"
+        },
+        {
+            "id": "telemedicine",
+            "group": 3,
+            "color": "#4daf4a"
+        },
+        {
+            "id": "crypto",
+            "group": 5,
+            "color": "#ff7f00"
+        },
+        {
+            "id": "tcot",
+            "group": 2,
+            "color": "#377eb8"
+        },
+        {
+            "id": "trumpcrash",
+            "group": 4,
+            "color": "#984ea3"
+        },
+        {
+            "id": "epidemiology",
+            "group": 3,
+            "color": "#4daf4a"
+        },
+        {
+            "id": "soundcloud",
+            "group": 9,
+            "color": "#999999"
+        },
+        {
+            "id": "np",
+            "group": 9,
+            "color": "#999999"
+        },
+        {
+            "id": "fintech",
+            "group": 5,
+            "color": "#ff7f00"
+        },
+        {
+            "id": "economy",
+            "group": 5,
+            "color": "#ff7f00"
+        },
+        {
+            "id": "fed",
+            "group": 5,
+            "color": "#ff7f00"
+        },
+        {
+            "id": "coronapocolypse",
+            "group": 1,
+            "color": "#e41a1c"
+        },
+        {
+            "id": "flu",
+            "group": 3,
+            "color": "#4daf4a"
+        },
+        {
+            "id": "supertuesday2020",
+            "group": 2,
+            "color": "#377eb8"
+        },
+        {
+            "id": "supertuesday",
+            "group": 2,
+            "color": "#377eb8"
+        },
+        {
+            "id": "doctors",
+            "group": 3,
+            "color": "#4daf4a"
+        },
+        {
+            "id": "nurses",
+            "group": 3,
+            "color": "#4daf4a"
+        },
+        {
+            "id": "staythefhome",
+            "group": 1,
+            "color": "#e41a1c"
+        },
+        {
+            "id": "trumpslump",
+            "group": 4,
+            "color": "#984ea3"
+        },
+        {
+            "id": "japan",
+            "group": 6,
+            "color": "#dbaf2a"
+        },
+        {
+            "id": "money",
+            "group": 5,
+            "color": "#ff7f00"
+        },
+        {
+            "id": "ccot",
+            "group": 2,
+            "color": "#377eb8"
+        },
+        {
+            "id": "toiletpapergate",
+            "group": 10,
+            "color": "#d12ac0"
+        },
+        {
+            "id": "toiletpapercrisis",
+            "group": 10,
+            "color": "#d12ac0"
+        },
+        {
+            "id": "trumpnotfitforoffice",
+            "group": 4,
+            "color": "#984ea3"
+        },
+        {
+            "id": "toiletpaperapocalypse",
+            "group": 10,
+            "color": "#d12ac0"
+        },
+        {
+            "id": "toiletpaper",
+            "group": 10,
+            "color": "#d12ac0"
+        },
+        {
+            "id": "airlines",
+            "group": 3,
+            "color": "#4daf4a"
+        },
+        {
+            "id": "coronapocalypse",
+            "group": 1,
+            "color": "#e41a1c"
+        },
+        {
+            "id": "trumpisanidiot",
+            "group": 4,
+            "color": "#984ea3"
+        },
+        {
+            "id": "epidemic",
+            "group": 3,
+            "color": "#4daf4a"
+        },
+        {
+            "id": "bernie2020",
+            "group": 2,
+            "color": "#377eb8"
+        },
+        {
+            "id": "medicareforall",
+            "group": 2,
+            "color": "#377eb8"
+        },
+        {
+            "id": "resist",
+            "group": 4,
+            "color": "#984ea3"
+        },
+        {
+            "id": "resistance",
+            "group": 4,
+            "color": "#984ea3"
+        },
+        {
+            "id": "biden",
+            "group": 2,
+            "color": "#377eb8"
+        },
+        {
+            "id": "bernie",
+            "group": 2,
+            "color": "#377eb8"
+        },
+        {
+            "id": "trumpliespeopledie",
+            "group": 4,
+            "color": "#984ea3"
+        },
+        {
+            "id": "markets",
+            "group": 5,
+            "color": "#ff7f00"
+        },
+        {
+            "id": "joebiden",
+            "group": 2,
+            "color": "#377eb8"
+        },
+        {
+            "id": "berniesanders",
+            "group": 2,
+            "color": "#377eb8"
+        },
+        {
+            "id": "cryptocurrency",
+            "group": 5,
+            "color": "#ff7f00"
+        },
+        {
+            "id": "covid19usa",
+            "group": 4,
+            "color": "#984ea3"
+        },
+        {
+            "id": "covid19us",
+            "group": 4,
+            "color": "#984ea3"
+        },
+        {
+            "id": "trumpdemic",
+            "group": 4,
+            "color": "#984ea3"
+        },
+        {
+            "id": "americafirst",
+            "group": 2,
+            "color": "#377eb8"
+        },
+        {
+            "id": "ftse",
+            "group": 5,
+            "color": "#ff7f00"
+        },
+        {
+            "id": "coronavid19",
+            "group": 7,
+            "color": "#a65628"
+        },
+        {
+            "id": "hiphop",
+            "group": 9,
+            "color": "#999999"
+        },
+        {
+            "id": "music",
+            "group": 9,
+            "color": "#999999"
+        },
+        {
+            "id": "spain",
+            "group": 6,
+            "color": "#dbaf2a"
+        },
+        {
+            "id": "medicine",
+            "group": 3,
+            "color": "#4daf4a"
+        },
+        {
+            "id": "trumpplague",
+            "group": 4,
+            "color": "#984ea3"
+        },
+        {
+            "id": "recession",
+            "group": 5,
+            "color": "#ff7f00"
+        },
+        {
+            "id": "disease",
+            "group": 3,
+            "color": "#4daf4a"
+        },
+        {
+            "id": "hhs",
+            "group": 7,
+            "color": "#a65628"
+        },
+        {
+            "id": "stockmarketcrash2020",
+            "group": 5,
+            "color": "#ff7f00"
+        },
+        {
+            "id": "science",
+            "group": 3,
+            "color": "#4daf4a"
+        },
+        {
+            "id": "influenza",
+            "group": 3,
+            "color": "#4daf4a"
+        },
+        {
+            "id": "dumptrump2020",
+            "group": 4,
+            "color": "#984ea3"
+        },
+        {
+            "id": "interestrates",
+            "group": 5,
+            "color": "#ff7f00"
+        },
+        {
+            "id": "wuhancoronavius",
+            "group": 8,
+            "color": "#f781bf"
+        },
+        {
+            "id": "chinesecoronavirus",
+            "group": 8,
+            "color": "#f781bf"
+        },
+        {
+            "id": "stayhomesavelives",
+            "group": 1,
+            "color": "#e41a1c"
+        },
+        {
+            "id": "tourism",
+            "group": 3,
+            "color": "#4daf4a"
+        },
+        {
+            "id": "france",
+            "group": 6,
+            "color": "#dbaf2a"
+        },
+        {
+            "id": "ratecut",
+            "group": 5,
+            "color": "#ff7f00"
+        },
+        {
+            "id": "rap",
+            "group": 9,
+            "color": "#999999"
+        },
+        {
+            "id": "coronalockdown",
+            "group": 1,
+            "color": "#e41a1c"
+        },
+        {
+            "id": "wallstreet",
+            "group": 5,
+            "color": "#ff7f00"
+        },
+        {
+            "id": "business",
+            "group": 5,
+            "color": "#ff7f00"
+        },
+        {
+            "id": "nationalemergency",
+            "group": 1,
+            "color": "#e41a1c"
+        },
+        {
+            "id": "medical",
+            "group": 3,
+            "color": "#4daf4a"
+        },
+        {
+            "id": "wuhan",
+            "group": 3,
+            "color": "#4daf4a"
+        },
+        {
+            "id": "chinacoronavirus",
+            "group": 8,
+            "color": "#f781bf"
+        },
+        {
+            "id": "federalreserve",
+            "group": 5,
+            "color": "#ff7f00"
+        },
+        {
+            "id": "finance",
+            "group": 5,
+            "color": "#ff7f00"
+        },
+        {
+            "id": "donttouchyourface",
+            "group": 1,
+            "color": "#e41a1c"
+        },
+        {
+            "id": "bonds",
+            "group": 5,
+            "color": "#ff7f00"
+        },
+        {
+            "id": "oil",
+            "group": 5,
+            "color": "#ff7f00"
+        },
+        {
+            "id": "vote",
+            "group": 2,
+            "color": "#377eb8"
+        },
+        {
+            "id": "toiletpaperpanic",
+            "group": 10,
+            "color": "#d12ac0"
+        },
+        {
+            "id": "panicbuying",
+            "group": 10,
+            "color": "#d12ac0"
+        },
+        {
+            "id": "quarantineactivities",
+            "group": 1,
+            "color": "#e41a1c"
+        },
+        {
+            "id": "cdwsocial",
+            "group": 3,
+            "color": "#4daf4a"
+        },
+        {
+            "id": "healthtech",
+            "group": 3,
+            "color": "#4daf4a"
+        },
+        {
+            "id": "cpac2020",
+            "group": 4,
+            "color": "#984ea3"
+        },
+        {
+            "id": "cnbc",
+            "group": 7,
+            "color": "#a65628"
+        },
+        {
+            "id": "sanders",
+            "group": 2,
+            "color": "#377eb8"
+        },
+        {
+            "id": "chinese",
+            "group": 3,
+            "color": "#4daf4a"
+        },
+        {
+            "id": "dowjones",
+            "group": 5,
+            "color": "#ff7f00"
+        },
+        {
+            "id": "nasdaq",
+            "group": 5,
+            "color": "#ff7f00"
+        },
+        {
+            "id": "trumpistheworstpresidentever",
+            "group": 4,
+            "color": "#984ea3"
+        },
+        {
+            "id": "investment",
+            "group": 5,
+            "color": "#ff7f00"
+        },
+        {
+            "id": "worstpresidentinhistory",
+            "group": 4,
+            "color": "#984ea3"
+        },
+        {
+            "id": "breakingnews",
+            "group": 9,
+            "color": "#999999"
+        },
+        {
+            "id": "trending",
+            "group": 9,
+            "color": "#999999"
+        },
+        {
+            "id": "fakenews",
+            "group": 2,
+            "color": "#377eb8"
+        },
+        {
+            "id": "socialdistancingnow",
+            "group": 1,
+            "color": "#e41a1c"
+        },
+        {
+            "id": "wuflu",
+            "group": 8,
+            "color": "#f781bf"
+        },
+        {
+            "id": "germany",
+            "group": 6,
+            "color": "#dbaf2a"
+        },
+        {
+            "id": "notmeus",
+            "group": 2,
+            "color": "#377eb8"
+        },
+        {
+            "id": "besafe",
+            "group": 1,
+            "color": "#e41a1c"
+        },
+        {
+            "id": "foxbusiness",
+            "group": 7,
+            "color": "#a65628"
+        },
+        {
+            "id": "blockchain",
+            "group": 5,
+            "color": "#ff7f00"
+        },
+        {
+            "id": "q",
+            "group": 2,
+            "color": "#377eb8"
+        },
+        {
+            "id": "tlot",
+            "group": 2,
+            "color": "#377eb8"
+        },
+        {
+            "id": "us",
+            "group": 6,
+            "color": "#dbaf2a"
+        },
+        {
+            "id": "pdac2020",
+            "group": 5,
+            "color": "#ff7f00"
+        },
+        {
+            "id": "innatpdac",
+            "group": 5,
+            "color": "#ff7f00"
+        },
+        {
+            "id": "biotech",
+            "group": 5,
+            "color": "#ff7f00"
+        },
+        {
+            "id": "metals",
+            "group": 5,
+            "color": "#ff7f00"
+        },
+        {
+            "id": "publicsafety",
+            "group": 3,
+            "color": "#4daf4a"
+        },
+        {
+            "id": "potus",
+            "group": 2,
+            "color": "#377eb8"
+        },
+        {
+            "id": "fintwit",
+            "group": 5,
+            "color": "#ff7f00"
+        },
+        {
+            "id": "votebluenomatterwho",
+            "group": 4,
+            "color": "#984ea3"
+        },
+        {
+            "id": "irancoronavirus",
+            "group": 6,
+            "color": "#dbaf2a"
+        },
+        {
+            "id": "shelterinplace",
+            "group": 1,
+            "color": "#e41a1c"
+        },
+        {
+            "id": "eu",
+            "group": 6,
+            "color": "#dbaf2a"
+        },
+        {
+            "id": "uk",
+            "group": 6,
+            "color": "#dbaf2a"
+        },
+        {
+            "id": "election2020",
+            "group": 2,
+            "color": "#377eb8"
+        },
+        {
+            "id": "congress",
+            "group": 2,
+            "color": "#377eb8"
+        },
+        {
+            "id": "studentdebt",
+            "group": 2,
+            "color": "#377eb8"
+        },
+        {
+            "id": "greatawakening",
+            "group": 2,
+            "color": "#377eb8"
+        },
+        {
+            "id": "deplorable",
+            "group": 2,
+            "color": "#377eb8"
+        },
+        {
+            "id": "theresistance",
+            "group": 4,
+            "color": "#984ea3"
+        },
+        {
+            "id": "dj",
+            "group": 9,
+            "color": "#999999"
+        },
+        {
+            "id": "marketcrash",
+            "group": 4,
+            "color": "#984ea3"
+        },
+        {
+            "id": "m4a",
+            "group": 2,
+            "color": "#377eb8"
+        },
+        {
+            "id": "costco",
+            "group": 10,
+            "color": "#d12ac0"
+        },
+        {
+            "id": "costcopanicbuying",
+            "group": 10,
+            "color": "#d12ac0"
+        }
+    ],
+    "links": [
+        {
+            "source": "maga",
+            "target": "kag",
+            "value": 223
+        },
+        {
+            "source": "cdc",
+            "target": "who",
+            "value": 204
+        },
+        {
+            "source": "investing",
+            "target": "stocks",
+            "value": 172
+        },
+        {
+            "source": "staysafe",
+            "target": "stayhome",
+            "value": 156
+        },
+        {
+            "source": "trading",
+            "target": "stocks",
+            "value": 142
+        },
+        {
+            "source": "quarantine",
+            "target": "quarantinelife",
+            "value": 139
+        },
+        {
+            "source": "trading",
+            "target": "investing",
+            "value": 132
+        },
+        {
+            "source": "qanon",
+            "target": "maga",
+            "value": 120
+        },
+        {
+            "source": "health",
+            "target": "healthcare",
+            "value": 110
+        },
+        {
+            "source": "maga",
+            "target": "trump2020",
+            "value": 109
+        },
+        {
+            "source": "stockmarket",
+            "target": "stocks",
+            "value": 105
+        },
+        {
+            "source": "stayhome",
+            "target": "flattenthecurve",
+            "value": 103
+        },
+        {
+            "source": "cnn",
+            "target": "msnbc",
+            "value": 100
+        },
+        {
+            "source": "kag",
+            "target": "trump2020",
+            "value": 99
+        },
+        {
+            "source": "foxnews",
+            "target": "cnn",
+            "value": 98
+        },
+        {
+            "source": "italy",
+            "target": "iran",
+            "value": 98
+        },
+        {
+            "source": "quarantine",
+            "target": "stayhome",
+            "value": 96
+        },
+        {
+            "source": "trumpviruscoverup",
+            "target": "trumpvirus",
+            "value": 93
+        },
+        {
+            "source": "trumpliedpeopledied",
+            "target": "trumppandemic",
+            "value": 92
+        },
+        {
+            "source": "trumppandemic",
+            "target": "trumpvirus",
+            "value": 91
+        },
+        {
+            "source": "wellness",
+            "target": "health",
+            "value": 90
+        },
+        {
+            "source": "chinesevirus",
+            "target": "wuhanvirus",
+            "value": 89
+        },
+        {
+            "source": "trumpvirus",
+            "target": "trumpvirus",
+            "value": 88
+        },
+        {
+            "source": "qanon",
+            "target": "wwg1wga",
+            "value": 87
+        },
+        {
+            "source": "maga",
+            "target": "kag2020",
+            "value": 85
+        },
+        {
+            "source": "chinavirus",
+            "target": "chinavirus",
+            "value": 84
+        },
+        {
+            "source": "kag2020",
+            "target": "kag",
+            "value": 79
+        },
+        {
+            "source": "italy",
+            "target": "southkorea",
+            "value": 78
+        },
+        {
+            "source": "stayhome",
+            "target": "stayhealthy",
+            "value": 78
+        },
+        {
+            "source": "coronvirus",
+            "target": "coronaalert",
+            "value": 76
+        },
+        {
+            "source": "health",
+            "target": "publichealth",
+            "value": 76
+        },
+        {
+            "source": "investing",
+            "target": "stockmarket",
+            "value": 75
+        },
+        {
+            "source": "quarantine",
+            "target": "lockdown",
+            "value": 73
+        },
+        {
+            "source": "travel",
+            "target": "health",
+            "value": 73
+        },
+        {
+            "source": "stayathome",
+            "target": "stayhome",
+            "value": 72
+        },
+        {
+            "source": "chinavirus",
+            "target": "wuhanvirus",
+            "value": 72
+        },
+        {
+            "source": "pencedemic",
+            "target": "trumpvirus",
+            "value": 71
+        },
+        {
+            "source": "stayhome",
+            "target": "quarantinelife",
+            "value": 71
+        },
+        {
+            "source": "trumpliesaboutcoronavirus",
+            "target": "trumpviruscoverup",
+            "value": 70
+        },
+        {
+            "source": "maga",
+            "target": "gop",
+            "value": 69
+        },
+        {
+            "source": "silver",
+            "target": "gold",
+            "value": 68
+        },
+        {
+            "source": "health",
+            "target": "safety",
+            "value": 68
+        },
+        {
+            "source": "stayhome",
+            "target": "lockdown",
+            "value": 66
+        },
+        {
+            "source": "quarantinelife",
+            "target": "quarantineandchill",
+            "value": 66
+        },
+        {
+            "source": "nih",
+            "target": "cdc",
+            "value": 62
+        },
+        {
+            "source": "stayhomechallenge",
+            "target": "quarantinelife",
+            "value": 61
+        },
+        {
+            "source": "trumpliesaboutcoronavirus",
+            "target": "trumpvirus",
+            "value": 60
+        },
+        {
+            "source": "foxnews",
+            "target": "msnbc",
+            "value": 60
+        },
+        {
+            "source": "maga",
+            "target": "maga2020",
+            "value": 60
+        },
+        {
+            "source": "cdc",
+            "target": "publichealth",
+            "value": 58
+        },
+        {
+            "source": "stayhome",
+            "target": "washyourhands",
+            "value": 58
+        },
+        {
+            "source": "kag2020",
+            "target": "maga2020",
+            "value": 58
+        },
+        {
+            "source": "cdc",
+            "target": "health",
+            "value": 57
+        },
+        {
+            "source": "quaratinelife",
+            "target": "stayathome",
+            "value": 56
+        },
+        {
+            "source": "iran",
+            "target": "southkorea",
+            "value": 55
+        },
+        {
+            "source": "wuhancoronavirus",
+            "target": "wuhanvirus",
+            "value": 54
+        },
+        {
+            "source": "stayhome",
+            "target": "stayhome",
+            "value": 54
+        },
+        {
+            "source": "publichealth",
+            "target": "healthcare",
+            "value": 54
+        },
+        {
+            "source": "bitcoin",
+            "target": "btc",
+            "value": 54
+        },
+        {
+            "source": "democrats",
+            "target": "republicans",
+            "value": 53
+        },
+        {
+            "source": "chinaliedpeopledied",
+            "target": "chinesevirus",
+            "value": 53
+        },
+        {
+            "source": "telehealth",
+            "target": "telemedicine",
+            "value": 53
+        },
+        {
+            "source": "crypto",
+            "target": "bitcoin",
+            "value": 53
+        },
+        {
+            "source": "quarantine",
+            "target": "stayathome",
+            "value": 52
+        },
+        {
+            "source": "foxnews",
+            "target": "maga",
+            "value": 51
+        },
+        {
+            "source": "maga",
+            "target": "tcot",
+            "value": 51
+        },
+        {
+            "source": "trumpcrash",
+            "target": "trumpvirus",
+            "value": 50
+        },
+        {
+            "source": "kag2020",
+            "target": "trump2020",
+            "value": 50
+        },
+        {
+            "source": "stayathome",
+            "target": "lockdown",
+            "value": 49
+        },
+        {
+            "source": "stayathome",
+            "target": "flattenthecurve",
+            "value": 49
+        },
+        {
+            "source": "kag",
+            "target": "maga2020",
+            "value": 49
+        },
+        {
+            "source": "maga",
+            "target": "wwg1wga",
+            "value": 48
+        },
+        {
+            "source": "epidemiology",
+            "target": "publichealth",
+            "value": 48
+        },
+        {
+            "source": "soundcloud",
+            "target": "np",
+            "value": 48
+        },
+        {
+            "source": "investing",
+            "target": "fintech",
+            "value": 47
+        },
+        {
+            "source": "staysafe",
+            "target": "stayhealthy",
+            "value": 47
+        },
+        {
+            "source": "chinavirus",
+            "target": "chinesevirus",
+            "value": 47
+        },
+        {
+            "source": "economy",
+            "target": "fed",
+            "value": 46
+        },
+        {
+            "source": "coronapocolypse",
+            "target": "quarantinelife",
+            "value": 46
+        },
+        {
+            "source": "stocks",
+            "target": "fintech",
+            "value": 46
+        },
+        {
+            "source": "health",
+            "target": "flu",
+            "value": 46
+        },
+        {
+            "source": "telehealth",
+            "target": "healthcare",
+            "value": 46
+        },
+        {
+            "source": "supertuesday2020",
+            "target": "supertuesday",
+            "value": 45
+        },
+        {
+            "source": "trading",
+            "target": "stockmarket",
+            "value": 45
+        },
+        {
+            "source": "doctors",
+            "target": "nurses",
+            "value": 45
+        },
+        {
+            "source": "staythefhome",
+            "target": "staythefhome",
+            "value": 45
+        },
+        {
+            "source": "trumpslump",
+            "target": "trumpviruscoverup",
+            "value": 44
+        },
+        {
+            "source": "cdc",
+            "target": "flu",
+            "value": 44
+        },
+        {
+            "source": "wwg1wga",
+            "target": "kag",
+            "value": 44
+        },
+        {
+            "source": "italy",
+            "target": "japan",
+            "value": 44
+        },
+        {
+            "source": "money",
+            "target": "stocks",
+            "value": 44
+        },
+        {
+            "source": "qanon",
+            "target": "kag",
+            "value": 43
+        },
+        {
+            "source": "ccot",
+            "target": "tcot",
+            "value": 43
+        },
+        {
+            "source": "cdc",
+            "target": "healthcare",
+            "value": 43
+        },
+        {
+            "source": "toiletpapergate",
+            "target": "toiletpapercrisis",
+            "value": 43
+        },
+        {
+            "source": "trumpviruscoverup",
+            "target": "trumpnotfitforoffice",
+            "value": 43
+        },
+        {
+            "source": "toiletpaperapocalypse",
+            "target": "toiletpaper",
+            "value": 43
+        },
+        {
+            "source": "quarantine",
+            "target": "quarantineandchill",
+            "value": 42
+        },
+        {
+            "source": "travel",
+            "target": "airlines",
+            "value": 42
+        },
+        {
+            "source": "trumpliedpeopledied",
+            "target": "trumpvirus",
+            "value": 42
+        },
+        {
+            "source": "stayathome",
+            "target": "quarantinelife",
+            "value": 42
+        },
+        {
+            "source": "quarantineandchill",
+            "target": "coronapocalypse",
+            "value": 42
+        },
+        {
+            "source": "trumpisanidiot",
+            "target": "trumpvirus",
+            "value": 42
+        },
+        {
+            "source": "chinesevirus",
+            "target": "chinesevirus",
+            "value": 42
+        },
+        {
+            "source": "trumpliesaboutcoronavirus",
+            "target": "trumpisanidiot",
+            "value": 41
+        },
+        {
+            "source": "epidemic",
+            "target": "health",
+            "value": 41
+        },
+        {
+            "source": "southkorea",
+            "target": "japan",
+            "value": 41
+        },
+        {
+            "source": "economy",
+            "target": "stocks",
+            "value": 40
+        },
+        {
+            "source": "bernie2020",
+            "target": "medicareforall",
+            "value": 40
+        },
+        {
+            "source": "trading",
+            "target": "fintech",
+            "value": 40
+        },
+        {
+            "source": "resist",
+            "target": "resistance",
+            "value": 40
+        },
+        {
+            "source": "biden",
+            "target": "bernie",
+            "value": 40
+        },
+        {
+            "source": "trumpliespeopledie",
+            "target": "trumppandemic",
+            "value": 39
+        },
+        {
+            "source": "economy",
+            "target": "markets",
+            "value": 38
+        },
+        {
+            "source": "investing",
+            "target": "gold",
+            "value": 38
+        },
+        {
+            "source": "joebiden",
+            "target": "berniesanders",
+            "value": 38
+        },
+        {
+            "source": "wuhancoronavirus",
+            "target": "chinavirus",
+            "value": 38
+        },
+        {
+            "source": "bitcoin",
+            "target": "cryptocurrency",
+            "value": 38
+        },
+        {
+            "source": "trumpslump",
+            "target": "trumpvirus",
+            "value": 37
+        },
+        {
+            "source": "staysafe",
+            "target": "stayathome",
+            "value": 37
+        },
+        {
+            "source": "toiletpapercrisis",
+            "target": "toiletpaper",
+            "value": 37
+        },
+        {
+            "source": "markets",
+            "target": "stocks",
+            "value": 37
+        },
+        {
+            "source": "gop",
+            "target": "tcot",
+            "value": 37
+        },
+        {
+            "source": "trumpnotfitforoffice",
+            "target": "trumpisanidiot",
+            "value": 37
+        },
+        {
+            "source": "healthcare",
+            "target": "telemedicine",
+            "value": 37
+        },
+        {
+            "source": "covid19usa",
+            "target": "covid19us",
+            "value": 36
+        },
+        {
+            "source": "maga",
+            "target": "cdc",
+            "value": 36
+        },
+        {
+            "source": "trumpdemic",
+            "target": "trumpvirus",
+            "value": 36
+        },
+        {
+            "source": "staysafe",
+            "target": "washyourhands",
+            "value": 36
+        },
+        {
+            "source": "quarantinelife",
+            "target": "lockdown",
+            "value": 36
+        },
+        {
+            "source": "trumpviruscoverup",
+            "target": "trumpisanidiot",
+            "value": 36
+        },
+        {
+            "source": "foxnews",
+            "target": "gop",
+            "value": 35
+        },
+        {
+            "source": "maga",
+            "target": "americafirst",
+            "value": 35
+        },
+        {
+            "source": "epidemic",
+            "target": "flu",
+            "value": 35
+        },
+        {
+            "source": "ftse",
+            "target": "stocks",
+            "value": 35
+        },
+        {
+            "source": "cdc",
+            "target": "coronavid19",
+            "value": 35
+        },
+        {
+            "source": "hiphop",
+            "target": "music",
+            "value": 35
+        },
+        {
+            "source": "italy",
+            "target": "spain",
+            "value": 35
+        },
+        {
+            "source": "washyourhands",
+            "target": "flattenthecurve",
+            "value": 35
+        },
+        {
+            "source": "health",
+            "target": "medicine",
+            "value": 35
+        },
+        {
+            "source": "crypto",
+            "target": "cryptocurrency",
+            "value": 35
+        },
+        {
+            "source": "trumpplague",
+            "target": "trumpvirus",
+            "value": 35
+        },
+        {
+            "source": "economy",
+            "target": "recession",
+            "value": 34
+        },
+        {
+            "source": "trumpliesaboutcoronavirus",
+            "target": "maga",
+            "value": 34
+        },
+        {
+            "source": "disease",
+            "target": "health",
+            "value": 34
+        },
+        {
+            "source": "fed",
+            "target": "stocks",
+            "value": 34
+        },
+        {
+            "source": "investing",
+            "target": "money",
+            "value": 34
+        },
+        {
+            "source": "cdc",
+            "target": "hhs",
+            "value": 34
+        },
+        {
+            "source": "stockmarketcrash2020",
+            "target": "stocks",
+            "value": 34
+        },
+        {
+            "source": "stocks",
+            "target": "gold",
+            "value": 34
+        },
+        {
+            "source": "health",
+            "target": "science",
+            "value": 34
+        },
+        {
+            "source": "flu",
+            "target": "influenza",
+            "value": 34
+        },
+        {
+            "source": "dumptrump2020",
+            "target": "trumpvirus",
+            "value": 34
+        },
+        {
+            "source": "economy",
+            "target": "stockmarket",
+            "value": 33
+        },
+        {
+            "source": "interestrates",
+            "target": "fed",
+            "value": 33
+        },
+        {
+            "source": "travel",
+            "target": "italy",
+            "value": 33
+        },
+        {
+            "source": "wuhancoronavius",
+            "target": "chinesecoronavirus",
+            "value": 33
+        },
+        {
+            "source": "wuhancoronavirus",
+            "target": "chinesevirus",
+            "value": 33
+        },
+        {
+            "source": "stayhome",
+            "target": "stayhomesavelives",
+            "value": 33
+        },
+        {
+            "source": "crypto",
+            "target": "btc",
+            "value": 33
+        },
+        {
+            "source": "travel",
+            "target": "tourism",
+            "value": 32
+        },
+        {
+            "source": "trumpliesaboutcoronavirus",
+            "target": "trumpnotfitforoffice",
+            "value": 32
+        },
+        {
+            "source": "france",
+            "target": "italy",
+            "value": 32
+        },
+        {
+            "source": "fed",
+            "target": "ratecut",
+            "value": 32
+        },
+        {
+            "source": "music",
+            "target": "rap",
+            "value": 32
+        },
+        {
+            "source": "stockmarket",
+            "target": "money",
+            "value": 32
+        },
+        {
+            "source": "stayhome",
+            "target": "coronalockdown",
+            "value": 32
+        },
+        {
+            "source": "stocks",
+            "target": "wallstreet",
+            "value": 32
+        },
+        {
+            "source": "health",
+            "target": "business",
+            "value": 32
+        },
+        {
+            "source": "publichealth",
+            "target": "medicine",
+            "value": 32
+        },
+        {
+            "source": "coronapocalypse",
+            "target": "nationalemergency",
+            "value": 32
+        },
+        {
+            "source": "economy",
+            "target": "business",
+            "value": 31
+        },
+        {
+            "source": "medical",
+            "target": "health",
+            "value": 31
+        },
+        {
+            "source": "resist",
+            "target": "trumpvirus",
+            "value": 31
+        },
+        {
+            "source": "cdc",
+            "target": "wuhan",
+            "value": 31
+        },
+        {
+            "source": "wuhan",
+            "target": "wuhanvirus",
+            "value": 31
+        },
+        {
+            "source": "chinacoronavirus",
+            "target": "chinavirus",
+            "value": 31
+        },
+        {
+            "source": "health",
+            "target": "who",
+            "value": 31
+        },
+        {
+            "source": "wuhanvirus",
+            "target": "wuhanvirus",
+            "value": 31
+        },
+        {
+            "source": "bernie2020",
+            "target": "berniesanders",
+            "value": 30
+        },
+        {
+            "source": "interestrates",
+            "target": "federalreserve",
+            "value": 30
+        },
+        {
+            "source": "finance",
+            "target": "investing",
+            "value": 30
+        },
+        {
+            "source": "maga",
+            "target": "democrats",
+            "value": 30
+        },
+        {
+            "source": "trading",
+            "target": "ftse",
+            "value": 30
+        },
+        {
+            "source": "trading",
+            "target": "money",
+            "value": 30
+        },
+        {
+            "source": "epidemic",
+            "target": "cdc",
+            "value": 30
+        },
+        {
+            "source": "ftse",
+            "target": "investing",
+            "value": 30
+        },
+        {
+            "source": "donttouchyourface",
+            "target": "washyourhands",
+            "value": 30
+        },
+        {
+            "source": "hiphop",
+            "target": "rap",
+            "value": 30
+        },
+        {
+            "source": "pencedemic",
+            "target": "trumpviruscoverup",
+            "value": 30
+        },
+        {
+            "source": "stocks",
+            "target": "bonds",
+            "value": 30
+        },
+        {
+            "source": "stocks",
+            "target": "oil",
+            "value": 30
+        },
+        {
+            "source": "economy",
+            "target": "investing",
+            "value": 29
+        },
+        {
+            "source": "maga",
+            "target": "cnn",
+            "value": 29
+        },
+        {
+            "source": "vote",
+            "target": "supertuesday",
+            "value": 29
+        },
+        {
+            "source": "toiletpaperpanic",
+            "target": "toiletpaper",
+            "value": 29
+        },
+        {
+            "source": "panicbuying",
+            "target": "toiletpaper",
+            "value": 29
+        },
+        {
+            "source": "quarantineactivities",
+            "target": "stayathome",
+            "value": 29
+        },
+        {
+            "source": "cdwsocial",
+            "target": "healthtech",
+            "value": 29
+        },
+        {
+            "source": "staythefhome",
+            "target": "stayhome",
+            "value": 29
+        },
+        {
+            "source": "cpac2020",
+            "target": "trumpvirus",
+            "value": 29
+        },
+        {
+            "source": "washyourhands",
+            "target": "flu",
+            "value": 29
+        },
+        {
+            "source": "coronavid19",
+            "target": "who",
+            "value": 29
+        },
+        {
+            "source": "healthcare",
+            "target": "medicine",
+            "value": 29
+        },
+        {
+            "source": "cnbc",
+            "target": "cdc",
+            "value": 28
+        },
+        {
+            "source": "cnn",
+            "target": "gop",
+            "value": 28
+        },
+        {
+            "source": "biden",
+            "target": "supertuesday",
+            "value": 28
+        },
+        {
+            "source": "biden",
+            "target": "sanders",
+            "value": 28
+        },
+        {
+            "source": "fed",
+            "target": "markets",
+            "value": 28
+        },
+        {
+            "source": "cdc",
+            "target": "washyourhands",
+            "value": 28
+        },
+        {
+            "source": "stayathome",
+            "target": "washyourhands",
+            "value": 28
+        },
+        {
+            "source": "chinaliedpeopledied",
+            "target": "chinavirus",
+            "value": 28
+        },
+        {
+            "source": "wuhan",
+            "target": "chinese",
+            "value": 28
+        },
+        {
+            "source": "stockmarketcrash2020",
+            "target": "stockmarket",
+            "value": 28
+        },
+        {
+            "source": "stockmarket",
+            "target": "dowjones",
+            "value": 28
+        },
+        {
+            "source": "stockmarket",
+            "target": "wallstreet",
+            "value": 28
+        },
+        {
+            "source": "stocks",
+            "target": "nasdaq",
+            "value": 28
+        },
+        {
+            "source": "trumpistheworstpresidentever",
+            "target": "trumpvirus",
+            "value": 28
+        },
+        {
+            "source": "economy",
+            "target": "investment",
+            "value": 27
+        },
+        {
+            "source": "economy",
+            "target": "interestrates",
+            "value": 27
+        },
+        {
+            "source": "worstpresidentinhistory",
+            "target": "trumpvirus",
+            "value": 27
+        },
+        {
+            "source": "investing",
+            "target": "stockmarketcrash2020",
+            "value": 27
+        },
+        {
+            "source": "breakingnews",
+            "target": "trending",
+            "value": 27
+        },
+        {
+            "source": "democrats",
+            "target": "fakenews",
+            "value": 27
+        },
+        {
+            "source": "stayathome",
+            "target": "stayhomesavelives",
+            "value": 27
+        },
+        {
+            "source": "wuhan",
+            "target": "chinavirus",
+            "value": 27
+        },
+        {
+            "source": "socialdistancingnow",
+            "target": "stayhome",
+            "value": 27
+        },
+        {
+            "source": "chinesecoronavirus",
+            "target": "chinesevirus",
+            "value": 27
+        },
+        {
+            "source": "trumpliesaboutcoronavirus",
+            "target": "pencedemic",
+            "value": 26
+        },
+        {
+            "source": "wuflu",
+            "target": "wuhancoronavirus",
+            "value": 26
+        },
+        {
+            "source": "maga",
+            "target": "msnbc",
+            "value": 26
+        },
+        {
+            "source": "medical",
+            "target": "healthcare",
+            "value": 26
+        },
+        {
+            "source": "toiletpaperpanic",
+            "target": "toiletpaperapocalypse",
+            "value": 26
+        },
+        {
+            "source": "trumpslump",
+            "target": "trumpslump",
+            "value": 26
+        },
+        {
+            "source": "trumpliespeopledie",
+            "target": "trumpvirus",
+            "value": 26
+        },
+        {
+            "source": "wwg1wga",
+            "target": "trump2020",
+            "value": 26
+        },
+        {
+            "source": "toiletpapergate",
+            "target": "toiletpaper",
+            "value": 26
+        },
+        {
+            "source": "wuhan",
+            "target": "health",
+            "value": 26
+        },
+        {
+            "source": "wuhan",
+            "target": "who",
+            "value": 26
+        },
+        {
+            "source": "italy",
+            "target": "germany",
+            "value": 26
+        },
+        {
+            "source": "staythefhome",
+            "target": "coronapocolypse",
+            "value": 26
+        },
+        {
+            "source": "toiletpapercrisis",
+            "target": "toiletpaperapocalypse",
+            "value": 26
+        },
+        {
+            "source": "washyourhands",
+            "target": "health",
+            "value": 26
+        },
+        {
+            "source": "iran",
+            "target": "japan",
+            "value": 26
+        },
+        {
+            "source": "quarantine",
+            "target": "wuhan",
+            "value": 25
+        },
+        {
+            "source": "economy",
+            "target": "finance",
+            "value": 25
+        },
+        {
+            "source": "bernie2020",
+            "target": "notmeus",
+            "value": 25
+        },
+        {
+            "source": "trumpliesaboutcoronavirus",
+            "target": "trumpslump",
+            "value": 25
+        },
+        {
+            "source": "france",
+            "target": "germany",
+            "value": 25
+        },
+        {
+            "source": "maga",
+            "target": "fakenews",
+            "value": 25
+        },
+        {
+            "source": "besafe",
+            "target": "stayhome",
+            "value": 25
+        },
+        {
+            "source": "cnbc",
+            "target": "foxbusiness",
+            "value": 25
+        },
+        {
+            "source": "worstpresidentinhistory",
+            "target": "dumptrump2020",
+            "value": 25
+        },
+        {
+            "source": "blockchain",
+            "target": "crypto",
+            "value": 25
+        },
+        {
+            "source": "fed",
+            "target": "stockmarket",
+            "value": 25
+        },
+        {
+            "source": "investing",
+            "target": "markets",
+            "value": 25
+        },
+        {
+            "source": "medicareforall",
+            "target": "supertuesday",
+            "value": 25
+        },
+        {
+            "source": "democrats",
+            "target": "kag",
+            "value": 25
+        },
+        {
+            "source": "wwg1wga",
+            "target": "q",
+            "value": 25
+        },
+        {
+            "source": "tlot",
+            "target": "tcot",
+            "value": 25
+        },
+        {
+            "source": "italy",
+            "target": "us",
+            "value": 25
+        },
+        {
+            "source": "pdac2020",
+            "target": "innatpdac",
+            "value": 25
+        },
+        {
+            "source": "biotech",
+            "target": "stocks",
+            "value": 25
+        },
+        {
+            "source": "gold",
+            "target": "metals",
+            "value": 25
+        },
+        {
+            "source": "publichealth",
+            "target": "publicsafety",
+            "value": 25
+        },
+        {
+            "source": "trump2020",
+            "target": "maga2020",
+            "value": 25
+        },
+        {
+            "source": "economy",
+            "target": "health",
+            "value": 24
+        },
+        {
+            "source": "qanon",
+            "target": "foxnews",
+            "value": 24
+        },
+        {
+            "source": "potus",
+            "target": "maga",
+            "value": 24
+        },
+        {
+            "source": "ccot",
+            "target": "gop",
+            "value": 24
+        },
+        {
+            "source": "foxnews",
+            "target": "tcot",
+            "value": 24
+        },
+        {
+            "source": "trading",
+            "target": "fintwit",
+            "value": 24
+        },
+        {
+            "source": "resist",
+            "target": "votebluenomatterwho",
+            "value": 24
+        },
+        {
+            "source": "irancoronavirus",
+            "target": "iran",
+            "value": 24
+        },
+        {
+            "source": "shelterinplace",
+            "target": "stayhome",
+            "value": 24
+        },
+        {
+            "source": "blockchain",
+            "target": "bitcoin",
+            "value": 24
+        },
+        {
+            "source": "investing",
+            "target": "fintwit",
+            "value": 24
+        },
+        {
+            "source": "medicareforall",
+            "target": "berniesanders",
+            "value": 24
+        },
+        {
+            "source": "fintwit",
+            "target": "stocks",
+            "value": 24
+        },
+        {
+            "source": "eu",
+            "target": "uk",
+            "value": 24
+        },
+        {
+            "source": "wuhan",
+            "target": "wuhancoronavirus",
+            "value": 24
+        },
+        {
+            "source": "wuhancoronavirus",
+            "target": "chinesecoronavirus",
+            "value": 24
+        },
+        {
+            "source": "uk",
+            "target": "us",
+            "value": 24
+        },
+        {
+            "source": "gop",
+            "target": "republicans",
+            "value": 24
+        },
+        {
+            "source": "gop",
+            "target": "election2020",
+            "value": 24
+        },
+        {
+            "source": "quarantinelife",
+            "target": "coronalockdown",
+            "value": 24
+        },
+        {
+            "source": "congress",
+            "target": "studentdebt",
+            "value": 24
+        },
+        {
+            "source": "quarantine",
+            "target": "health",
+            "value": 23
+        },
+        {
+            "source": "qanon",
+            "target": "greatawakening",
+            "value": 23
+        },
+        {
+            "source": "qanon",
+            "target": "tcot",
+            "value": 23
+        },
+        {
+            "source": "ccot",
+            "target": "maga",
+            "value": 23
+        },
+        {
+            "source": "maga",
+            "target": "deplorable",
+            "value": 23
+        },
+        {
+            "source": "resist",
+            "target": "theresistance",
+            "value": 23
+        },
+        {
+            "source": "cnbc",
+            "target": "who",
+            "value": 23
+        },
+        {
+            "source": "dj",
+            "target": "music",
+            "value": 23
+        },
+        {
+            "source": "epidemic",
+            "target": "publichealth",
+            "value": 23
+        },
+        {
+            "source": "trumpcrash",
+            "target": "marketcrash",
+            "value": 23
+        },
+        {
+            "source": "medicareforall",
+            "target": "m4a",
+            "value": 23
+        },
+        {
+            "source": "costco",
+            "target": "costcopanicbuying",
+            "value": 23
+        },
+        {
+            "source": "cdc",
+            "target": "trumpvirus",
+            "value": 23
+        }
+    ]
+}
