@@ -1,4 +1,4 @@
-# COVID-19 Twitter Vizualization
+# COVID-19 Twitter Visualization
 Code for Info 247 final project: Mitigating The COVID-19 Infodemic with Twitter analysis
 
 ## Data
@@ -42,7 +42,7 @@ We use the `emoji` python library to extract emojis from each tweet and store th
 - `reverse_geocoder` (lat, long -> state)
 
 ```
-pip install tqdm, vaderSentiment, emoji --upgrade
+pip install tqdm, vaderSentiment, emoji reverse_geocoder --upgrade
 ```
 
 ### Usage
@@ -59,7 +59,7 @@ Due to a recent [change](https://twitter.com/TwitterSupport/status/1141039841993
 
 1. For tweets that have `latitude` and `longitude` coordinates we [reverse geocode](https://github.com/thampiman/reverse-geocoder) these coordinates. If the returned address is in the USA, we label the tweet with the returned state label. (~0.1% of all tweets)
 2. When users decide to assign a location to a Tweet, they choose from a list of candidate [Places](https://developer.twitter.com/en/docs/tweets/data-dictionary/overview/geo-objects#place-dictionary). ~3% of all tweets in our dataset are assigned a place with a bounding box. We reverse geocode the center of this bounding box and save returned state label.
-3. User accounts of ~70% of the tweets in our dataset have a locattion associated with them. The location is user-specified, which means it does not always stand for an attested geographical region. Perhaps for privacy reasons, many users choose made-up locations such as "La-La land", "The Moon", "Hogwarts". 
+3. User accounts of ~70% of the tweets in our dataset have a location associated with them. The location is user-specified, which means it does not always stand for an attested geographical region. Perhaps for privacy reasons, many users choose made-up locations such as "La-La land", "The Moon", "Hogwarts". 
 
 We sequentially search the user specified location string for occurences of (1) state abbreviations (CA, AL, MA, ..), (2) full state names, (3) USA cities, and (4) various spellings of "the united states of America" (e.g. usa, us, america). If there is a match at any step, we convert the matching string to a 2-letter state abbreviation and label the tweet with that location. 
  
@@ -74,3 +74,4 @@ Running the location processing script
 cd scripts
 python3 process_locations.py --dir ../path/to/preprocessed/tweets/dir/ --out tweets.0301-0331.usa.csv
 ```
+
