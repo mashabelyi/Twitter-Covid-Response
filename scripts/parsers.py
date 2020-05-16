@@ -5,6 +5,8 @@ from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 sent = SentimentIntensityAnalyzer()
 # emoji extractor
 import emoji
+# location 
+from location import parser as LocationParser
 
 def domain(url):
     try:
@@ -19,11 +21,6 @@ def clean_text(text):
     # remove commas and new lines
     text = re.sub('[\n\r,]', ' ', text)
     return text.strip()
-
-def bbox_string(bbox):
-    if bbox is None:
-        return ''
-    return ' '.join(["lat{}lng{}".format(x[0], x[1]) for x in bbox])
 
 def extract_emojis(str):
     return ' '.join(c for c in str if c in emoji.UNICODE_EMOJI)
@@ -105,6 +102,11 @@ class Tweet:
         self.dt = datetime.strptime(self.datetime, '%a %b %d %H:%M:%S %z %Y')
 #         print(dt.year, dt.month, dt.day, dt.weekday(), dt.hour, dt.minute, dt.utcoffset())
 
+        self.state = LocationParser(self)
+    
+    def is_usa(self):
+        return self.state is not None
+
     def to_csv(self):
         return ",".join([
             self.id, self.lang,
@@ -118,10 +120,35 @@ class Tweet:
             (self.place_name or ''), bbox_string(self.place_bbox)
         ]).replace('\n', '')
 
+    def to_json(self):
+        data = {
+                'id':self.id,
+                'lang': self.lang,
+                'user_id': self.userId,
+                'user_screen_name': self.user_screen_name,
+                'year': self.dt.year,
+                'month': self.dt.month,
+                'date': self.dt.day,
+                'day': self.dt.weekday(),
+                'hour':self.dt.hour,
+                'minute':self.dt.minute,
+                'utc_offset':str(self.dt.utcoffset()),
+                'text': self.text,
+                'hashtags': self.hashtags,
+                'user_mentions': self.user_mentions,
+                'symbols': self.symbols,
+                'urls': self.urls,
+                'emojis': self.emojis,
+                'sentiment': self.sentiment,
+                'location': self.state
+            }
+        
+        return data
+
 class Retweet:
     column_names = [
             'tweetId', 'retweeted_id',
-            'userId', 'user_screen_name',
+            'userId', 'user_screen_name','retweeted_userId', 'retweeted_user_screen_name',
             'year', 'month', 'date', 'day', 'hour', 'minute', 'utc_offset',
             'lat', 'long', 'user_location', 'place_name', 'place_bbox'
         ]
@@ -130,6 +157,8 @@ class Retweet:
     def parse(self, data):
         # Tweet
         self.id = data['id_str']
+        self.lang = data['lang']
+        self.tweet = Tweet(data['retweeted_status'])
         
         # Date
         self.datetime = data['created_at']
@@ -160,19 +189,45 @@ class Retweet:
                 self.place_name = data['place']['full_name'].replace(',', ';')
             except:
                 pass
+
+        self.state = LocationParser(self)
             
-        # RETWEET ID
-        self.retweeted_id = data['retweeted_status']['id_str']        
+        # RETWEET INFO
+        self.retweeted_id = data['retweeted_status']['id_str']
+        self.retweeted_userId = data['retweeted_status']['user']['id_str']
+        self.retweeted_user_screen_name = data['retweeted_status']['user']['screen_name']     
     
+    
+    def is_usa(self):
+        return self.state is not None
+
     def to_csv(self):
         return ",".join([
             self.id, self.retweeted_id,
-            self.userId, self.user_screen_name,
+            self.userId, self.user_screen_name, self.retweeted_userId, self.retweeted_user_screen_name,
             str(self.dt.year), str(self.dt.month), str(self.dt.day), str(self.dt.weekday()),
             str(self.dt.hour), str(self.dt.minute), str(self.dt.utcoffset()),
             str(self.lat or ''), str(self.long or ''), str(self.user_location or ''),
             (self.place_name or ''), bbox_string(self.place_bbox)
         ]).replace('\n', '')
+
+    def to_json(self):
+        return {
+                'id':self.id,
+                'lang': self.lang,
+                'user_id': self.userId,
+                'user_screen_name': self.user_screen_name,
+                'year': self.dt.year,
+                'month': self.dt.month,
+                'date': self.dt.day,
+                'day': self.dt.weekday(),
+                'hour':self.dt.hour,
+                'minute':self.dt.minute,
+                'utc_offset':str(self.dt.utcoffset()),
+                'retweeted_status': self.tweet.to_json(),
+                'location': self.state
+            }
+
 
 class QuoteTweet:
     column_names = [
@@ -219,6 +274,9 @@ class QuoteTweet:
         
         self.quoted_id = data['quoted_status_id_str']
     
+    def is_usa(self):
+        return self.state is not None
+
     def to_csv(self):
         return ",".join([
             self.id, self.quoted_id,

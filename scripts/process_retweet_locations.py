@@ -2,14 +2,16 @@
 Extract locations from pre-processed tweet files
 Save only tweets from USA
 """
-import os, json, re
+import os, json, re, gzip
 import reverse_geocoder as rg
 from argparse import ArgumentParser, ArgumentDefaultsHelpFormatter
+from joblib import Parallel, delayed
 from tqdm import tqdm
 
 parser = ArgumentParser("ProcessTweets", formatter_class=ArgumentDefaultsHelpFormatter, conflict_handler='resolve') #'2020-03'
 parser.add_argument("--dir", help="Data directory.", required=True)
 parser.add_argument("--out", help="Output file", required=True)
+parser.add_argument("--njobs", default=1, type=int, help="num parallel jobs", required=False)
 args = parser.parse_args()
 
 
@@ -51,6 +53,39 @@ state_names = ['Alabama','Alaska',
 
 
 usa_country_names = ['America', 'US', 'USA', 'U.S', 'U.S.A', 'estados unidos']
+
+
+def state_from_placename(tweet, name):
+
+	# state codes
+	res = re.search(r'\b({})\b'.format('|'.join(state_codes)), name, flags=re.IGNORECASE)
+	if res:
+		# return tweet[:-5] + [res[0].upper()]
+		return tweet[:-5] + [res.group(0).upper()]
+
+	# state names
+	res = re.search(r'\b({})\b'.format('|'.join(state_names)), name, flags=re.IGNORECASE)
+	if res:
+		# return tweet[:-5] + [state2code[res[0].lower()]] # convert to state code (CA, MA, IL,...)
+		return tweet[:-5] + [state2code[res.group(0).lower()]] # convert to state code (CA, MA, IL,...)
+
+	# check USA cities
+	res_city = re.search(r'\b({})\b'.format('|'.join(us_cities)), name, flags=re.IGNORECASE)
+	if res_city:
+		return tweet[:-5] + [state2code[city2state[res_city.group(0).lower()]]] # convert to state code (CA, MA, IL,...)
+
+	# is it at least in the USA?
+	res = re.search(r'\b({})\b'.format('|'.join(usa_country_names)), name, flags=re.IGNORECASE)
+	if res:
+		return tweet[:-5] + [''] # return empty state
+
+	# to check other countries:
+	# res = re.search(r'\b({})\b'.format('|'.join(countries)), row['name'], flags=re.IGNORECASE)
+	# if res:
+	# 	return tweet[:-5] + [res[0].lower()]
+
+	# everything else
+	return None
 
 
 def process_location(tweet):
@@ -95,78 +130,96 @@ def process_location(tweet):
 			pass
 
 
+	# has place name?
+	place_name = tweet[-2]
+	if place_name and len(place_name) > 1:
+		try:
+			return state_from_placename(tweet, place_name)
+		except:
+			return None
+
 	# has user_location?
 	user_location = tweet[-3]
 	if user_location and len(user_location) > 1:
+		# return state_from_placename(tweet, user_location)
 		try:
-			# state codes
-			res = re.search(r'\b({})\b'.format('|'.join(state_codes)), user_location, flags=re.IGNORECASE)
-			if res:
-				return tweet[:-5] + [res[0].upper()]
-
-			# state names
-			res = re.search(r'\b({})\b'.format('|'.join(state_names)), user_location, flags=re.IGNORECASE)
-			if res:
-				return tweet[:-5] + [state2code[res[0].lower()]] # convert to state code (CA, MA, IL,...)
-
-			# check USA cities
-			res_city = re.search(r'\b({})\b'.format('|'.join(us_cities)), user_location, flags=re.IGNORECASE)
-			if res_city:
-				return tweet[:-5] + [state2code[city2state[res_city[0].lower()]]] # convert to state code (CA, MA, IL,...)
-
-			# is it at least in the USA?
-			res = re.search(r'\b({})\b'.format('|'.join(usa_country_names)), user_location, flags=re.IGNORECASE)
-			if res:
-				return tweet[:-5] + [''] # return empty state
-
-			# to check other countries:
-			# res = re.search(r'\b({})\b'.format('|'.join(countries)), row['user_location'], flags=re.IGNORECASE)
-			# if res:
-			# 	return tweet[:-5] + [res[0].lower()]
-
-			# everything else
-			return None
-
+			return state_from_placename(tweet, user_location)
 		except:
 			return None
 
 
 column_names = [
-			'tweetId', 'retweeted_id', #'lang',
-			'userId', 'user_screen_name',
+			'tweetId', 'retweeted_id',
+			'userId', 'user_screen_name','retweeted_userId', 'retweeted_user_screen_name',
 			'year', 'month', 'date', 'day', 'hour', 'minute', 'utc_offset',
 			'text', 'hashtags', 'user_mentions', 'symbols', 'urls', 'emojis', 'sentiment',
 			'retweet_cont', 'favorite_count',
 			'state']
 
- # column_names = [
- #            'tweetId', 'retweeted_id',
- #            'userId', 'user_screen_name',
- #            'year', 'month', 'date', 'day', 'hour', 'minute', 'utc_offset',
- #            'lat', 'long', 'user_location', 'place_name', 'place_bbox'
- #        ]
+# retweet_column_names = [
+#     'tweetId', 'retweeted_id',
+#     'userId', 'user_screen_name','retweeted_userId', 'retweeted_user_screen_name',
+#     'year', 'month', 'date', 'day', 'hour', 'minute', 'utc_offset',
+#     'lat', 'long', 'user_location', 'place_name', 'place_bbox'
+# ]
 
 with open(args.out, 'w') as f:
 	f.write(','.join(column_names) + '\n')
 
 # usa_tweets = []
 
-# cycle through all pre-processed tweet files
+# cycle through all pre-processed retweet files
 for fname in os.listdir(args.dir):
-	if fname.endswith('.csv'):
+	if fname.startswith('retweets') and fname.endswith('.csv.gz'):
 		print(fname)
+		
 		# process file
-		with open(os.path.join(args.dir, fname), 'r') as f:
+		tweets_to_parse = []
+		with gzip.open(os.path.join(args.dir, fname), 'rt', encoding='utf-8') as f:
 			for line in f:
 				if line.startswith('tweetId'):
 					continue
 
-				tweet = line.strip().split(',')
-				res = process_location(tweet)
-				if res:
-					# write to file
-					with open(args.out, 'a') as fout:
-						fout.write(','.join(res) + '\n')
+				tweet = line.split(',')
+				tweet[-1] = tweet[-1].strip() # remove the newline char
+				if len(tweet) != 18:
+					continue
+
+				# res = process_location(tweet)
+				# if res:
+				# 	with open(args.out, 'a') as fout:
+				# 		fout.write('{},,,,,,,,,,{}\n'.format(','.join(res[:-1]), res[-1]))
+
+				tweets_to_parse.append(tweet)
+				
+				# save every 100,000
+				if len(tweets_to_parse) >= 500000:
+					for tweet in tqdm(tweets_to_parse):
+						res = process_location(tweet)
+						if res:
+							with open(args.out, 'a') as f:
+								f.write('{},,,,,,,,,,{}\n'.format(','.join(res[:-1]), res[-1]))
+
+					tweets_to_parse = []
+
+					# PARALLEL JOBS ARE SLOW FOR THIS!
+					# results = Parallel(n_jobs=args.njobs)(delayed(process_location)(tweet) for tweet in tqdm(tweets_to_parse))
+					# tweets_to_parse = []
+
+					# with open(args.out, 'a') as f:
+					# 	for res in results:
+					# 		if res:
+					# 			with open(args.out, 'a') as f:
+					# 				f.write('{},,,,,,,,,,{}\n'.format(','.join(res[:-1]), res[-1]))
+
+					
+		for tweet in tqdm(tweets_to_parse):
+			res = process_location(tweet)
+			if res:
+				with open(args.out, 'a') as f:
+					f.write('{},,,,,,,,,,{}\n'.format(','.join(res[:-1]), res[-1]))
+
+		
 
 # # save output to file
 # with open(args.out, 'w') as f:
